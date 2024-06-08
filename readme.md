@@ -4,6 +4,7 @@ https://github.com/hikashi/multi-robot-rrt-exploration-melodic
 1. 自适应探索速率和自适应采样步长；
 2. 结合人工势场法的RRT采样；
 3. 改进后的代价函数和成本函数。
+
 与原版本相比，不需要额外点四个点确认边界而是直接开始，指令：
 安装18.04库：
 sudo apt-get install ros-melodic-gmapping
@@ -12,6 +13,7 @@ sudo apt-get install python-opencv
 sudo apt-get install python-numpy
 sudo apt-get install python-scikits-learn
 sudo apt-get install ros-melodic-teb-local-planner
+
 安装包：
 sudo mkdir -p ~/catkin_explore/src
 cd ~/catkin_explore/src/
@@ -30,6 +32,7 @@ T3：
 source ~/catkin_explore/devel/setup.bash 
 export TURTLEBOT3_MODEL=waffle_pi
 roslaunch rrt_exploration single_tb3_exploration.launch
+
 系统版本：
 rosdistro: melodic
 rosversion: 1.14.13
